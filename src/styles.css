@@ -100,6 +100,16 @@ button:hover {
     width: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
 #menu{
     padding: 72px;
 
@@ -108,6 +118,7 @@ button:hover {
     grid-column: 3/-1;
 
     display: flex;
+    overflow: scroll;
 }
 
 #menu ul{
