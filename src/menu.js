@@ -17,8 +17,8 @@ let main = [
     { name: "Belly bowl", price: 13, ingredients: ["pork belly", "sushi rice", "teriyaki sauce", "cherry tomato", "coleslaw salad"] },
     { name: "Katsu chicken", price: 13, ingredients: ["fried chicken breast", "coleslaw salad", "cucumber", "tonkatsu sauce", "hazelnuts", "sushu rice"] },
     { name: "Tonkatsku tenderloin", price: 16, ingredients: ["pork tenderloin with cheddar", "granny smith and miso", "sushi rice"] },
-    { name: "Chicken tikki masala", price: 17, ingredients: ["chicken thighs", "naan bread", "rice"] },
-    { name: "Tonkotsu ramen", price: 15, ingredients: ["pork belly", "noodles", "egg", "daikon", "spinach"] },
+    // { name: "Chicken tikki masala", price: 17, ingredients: ["chicken thighs", "naan bread", "rice"] },
+    // { name: "Tonkotsu ramen", price: 15, ingredients: ["pork belly", "noodles", "egg", "daikon", "spinach"] },
 ];
 
 let desserts = [
@@ -51,10 +51,13 @@ let loadMenu = function () {
     starters.forEach(item => {
         let liItem = document.createElement("li")
         liItem.textContent = item.name;
+        liItem.classList.add("name")
         let ingredientsList = document.createElement("p")
+        ingredientsList.classList.add("ingredients")
         ingredientsList.textContent = item.ingredients.join(", ");
         liItem.appendChild(ingredientsList)
         let itemPrice = document.createElement("p")
+        itemPrice.classList.add("price")
         itemPrice.textContent = `${item.price}$`
         liItem.appendChild(itemPrice)
         startersUl.appendChild(liItem)
@@ -70,10 +73,13 @@ let loadMenu = function () {
     main.forEach(item => {
         let liItem = document.createElement("li")
         liItem.textContent = item.name;
+        liItem.classList.add("name")
         let ingredientsList = document.createElement("p")
+        ingredientsList.classList.add("ingredients")
         ingredientsList.textContent = item.ingredients.join(", ");
         liItem.appendChild(ingredientsList)
         let itemPrice = document.createElement("p")
+        itemPrice.classList.add("price")
         itemPrice.textContent = `${item.price}$`
         liItem.appendChild(itemPrice)
         mainUl.appendChild(liItem)
@@ -89,10 +95,13 @@ let loadMenu = function () {
     desserts.forEach(item => {
         let liItem = document.createElement("li")
         liItem.textContent = item.name;
+        liItem.classList.add("name")
         let ingredientsList = document.createElement("p")
+        ingredientsList.classList.add("ingredients")
         ingredientsList.textContent = item.ingredients.join(", ");
         liItem.appendChild(ingredientsList)
         let itemPrice = document.createElement("p")
+        itemPrice.classList.add("price")
         itemPrice.textContent = `${item.price}$`
         liItem.appendChild(itemPrice)
         dessertsUl.appendChild(liItem)

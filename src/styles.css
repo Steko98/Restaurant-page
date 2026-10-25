@@ -34,7 +34,7 @@ h2 {
     font-size: 2rem;
 }
 
-p {
+nav p {
     font-size: 1.5rem;
 }
 
@@ -110,7 +110,7 @@ button:hover {
 
 
 
-#menu{
+#menu {
     padding: 72px;
 
     background-color: rgba(0, 0, 0, 0.7);
@@ -118,16 +118,19 @@ button:hover {
     grid-column: 3/-1;
 
     display: flex;
-    overflow: scroll;
+    gap: 24px;
 }
 
-#menu ul{
+#menu ul {
+    list-style-type: none;
+
     flex: 1;
     height: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
 }
 
 #menu-img {
@@ -141,4 +144,22 @@ button:hover {
     object-fit: cover;
     max-height: 100%;
     width: 100%;
+}
+
+.name {
+    color: #F0A500;
+    font-size: 1.2rem;
+}
+
+.ingredients {
+    color: white;
+}
+
+.price {
+    color: #73A5CA;
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
 }
