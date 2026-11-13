@@ -1,165 +1,178 @@
 :root {
-    font-size: 16px;
-    color: white;
+  font-size: 16px;
+  color: white;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 nav {
-    min-width: 100%;
-    height: 72px;
+  min-width: 100%;
+  height: 72px;
 
-    padding: 0 72px;
+  padding: 0 72px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    background-color: rgba(0, 0, 0, 0.7)
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
-nav p {
+p {
     font-size: 1.5rem;
 }
 
+
 #button-box {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 button {
-    border: none;
-    border-radius: 10px;
-    padding: 16px 24px;
+  border: none;
+  border-radius: 10px;
+  padding: 16px 24px;
 
-    font-size: 20px;
+  font-size: 20px;
 
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #content {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 
-    background-image: url(./assets/background.jpg);
-    background-position: center;
-    background-size: cover;
+  background-image: url(./assets/background.jpg);
+  background-position: center;
+  background-size: cover;
 
-    padding: 72px;
-    padding-top: 144px;
+  padding: 72px;
+  padding-top: 144px;
 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
 }
 
 #info {
-    padding: 72px;
+  padding: 72px;
 
-    background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 
-    grid-column: 1/4;
-    grid-row: 1/2;
+  grid-column: 1/4;
+  grid-row: 1/2;
 
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
 }
 
 #hero-img {
-    contain: size;
+  contain: size;
 
-    grid-column: 4 / span 2;
-    grid-row: 1/2;
+  grid-column: 4 / span 2;
+  grid-row: 1/2;
 }
 
-#hero-img>img {
-    object-fit: cover;
-    max-height: 100%;
-    width: 100%;
+#hero-img > img {
+  object-fit: cover;
+  max-height: 100%;
+  width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
 
 #menu {
-    padding: 72px;
+  padding: 72px;
 
-    background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 
-    grid-column: 3/-1;
+  grid-column: 3/-1;
 
-    display: flex;
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 #menu ul {
-    list-style-type: none;
+  list-style-type: none;
 
-    flex: 1;
-    height: 100%;
+  flex: 1;
+  height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #menu-img {
-    contain: size;
+  contain: size;
 
-    grid-column: 1 / span 2;
-    grid-row: 1/2;
+  grid-column: 1 / span 2;
+  grid-row: 1/2;
 }
 
-#menu-img>img {
-    object-fit: cover;
-    max-height: 100%;
-    width: 100%;
+#menu-img > img {
+  object-fit: cover;
+  max-height: 100%;
+  width: 100%;
 }
 
 .name {
-    color: #F0A500;
-    font-size: 1.2rem;
+  color: #f0a500;
+  font-size: 1.2rem;
 }
 
 .ingredients {
-    color: white;
+    font-size: 1.2rem;
+  color: white;
 }
 
 .price {
-    color: #73A5CA;
-    font-size: 1.2rem;
+  color: #73a5ca;
+  font-size: 1.2rem;
 }
 
 h4 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+
+
+#about {
+  padding: 72px;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  grid-column: 1/-1;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#about div {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
